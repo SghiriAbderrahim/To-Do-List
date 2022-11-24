@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="list.css" />
+    <title>TO DO LIST</title>
+  </head>
+  <body>
+    <div class="head">
+      <div class="logo">
+        <span>TO</span>
+        <span>DO</span>
+        <span>LIST</span>
+        <span class="Ncell">0</span>
+      </div>
+      <div class="d-l" onclick="mood()"></div>
+    </div>
+    <div class="text">
+      <div class="text2">
+        
+       
+        <input type="text" class="intext" placeholder="Write here" />
+      
+        <button class="add" onclick="add()"><svg fill="var(--color)" width="24" height="24" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg></button>
+      </div>
+    </div>
+    <div class="contener">
+
+     
+
+    </div>
+    <div class="plus" onclick="plus()">+</div>
+
+    <div class="date">
+<div class="idate">
+<input type="datetime-local" class="dd" value="">
+<div>
+  <button onclick="document.querySelector('.date').style.display='none';arrList[alarmItem].alarm='';list();">Cancel</button>
+  <button onclick="date()">OK</button>
+
+</div>
+</div>
+    </div>
+
+    <div class="alert">
+      <div class="alert2">
+      
+      <p class="para"></p>
+        <button onclick="document.querySelector('.alert').style.display='none';">OK</button>
+      
+      
+      </div>
+          </div>
+      
+
+    <script src="list.js"></script>
+
+
+  </body>
+</html>
